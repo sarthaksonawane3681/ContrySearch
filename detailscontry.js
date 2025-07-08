@@ -24,7 +24,8 @@ let cd=fetch(`https://restcountries.com/v3.1/name/${para}`)
         for (const [key, value] of Object.entries(element.currencies)) {
            currencies.push(key)
               }
-
+            let border=[...element.borders]
+            console.log(border)
         let contrydetails=document.createElement('div')
                   contrydetails.classList.add('contrydetails')
                   contrydetails.innerHTML=`
@@ -63,13 +64,13 @@ let cd=fetch(`https://restcountries.com/v3.1/name/${para}`)
                 <div class="borderinfo"><h2>Border Contries</h2></div>
                 <div>
                   <button><a href="./detailedinfo.html?name=${element.borders[0]}">${element.borders[0]}</a></button>
-                  <button><a href="./detailedinfo.html?name=${element.borders[1]}">${element.borders[1]}</a></button>
-                </div>
-              </div>
-            </div>
-          </div>
-              </div>
-            `
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+                  `
+                  // <button><a href="./detailedinfo.html?name=${element.borders[1]}">${element.borders}</a></button>
             // console.log(contrydetails)
             maincontainer.append(contrydetails);
     })
