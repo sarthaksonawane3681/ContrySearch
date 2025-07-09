@@ -168,6 +168,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: start;
+  transform: translateX(-105%);
   animation:open 2s ease-out 1s 1 forwards
 }
 @keyframes open {
@@ -289,6 +290,7 @@ img {
     display:flex;
     align-items: start;
     padding: 2px;
+    transform: translateY(-105%);
     animation:open 2s ease-out 3s 1 forwards;
   }
   @keyframes open {
