@@ -24,8 +24,6 @@ let cd=fetch(`https://restcountries.com/v3.1/name/${para}`)
         for (const [key, value] of Object.entries(element.currencies)) {
            currencies.push(key)
               }
-            let border=[...element.borders]
-            console.log(border)
         let contrydetails=document.createElement('div')
                   contrydetails.classList.add('contrydetails')
                   contrydetails.innerHTML=`
