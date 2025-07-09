@@ -170,11 +170,7 @@ img {
   justify-content: start;
   
   transform: translateX(-110%); 
-<<<<<<< HEAD
-   animation:open 2s ease-out 1s 1 forwards
-=======
   animation:open 2s ease-out 1s 1 forwards
->>>>>>> 86a295a (CSS)
 }
 @keyframes open {
   0% {
@@ -295,7 +291,6 @@ img {
     display:flex;
     align-items: start;
     padding: 2px;
-    transform: translateY(-110%);
     animation:open 2s ease-out 3s 1 forwards;
   }
   @keyframes open {
